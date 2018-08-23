@@ -1,2 +1,2 @@
 # aulaalgoritimos
-tutorial de gith
+tutorial de git
