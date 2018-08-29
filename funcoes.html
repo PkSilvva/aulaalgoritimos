@@ -7,6 +7,23 @@
     <title>Aula 29/08</title>
 </head>
 <body>
-    
+    <form>
+        Nome do bairro:<input id="nome" type="text"> <br>
+        Habitantes: <input id="habitantes" type="text"><br>
+        Caracteristicas: <input id="caracteristica" type="text"><br>
+        <br><button onclick="cadastrar()">Cadastrar</button>
+        
+        <h3>Bairro cadastrado</h3>
+        <p>Bairro<b id="bairro_cadastrado"></b>
+        possui <u id="habitantes_cadastrados"></u> habitantes e tem como caracteristica <i id="caracteristica_cadastrada"></i></p>
+
+    </form>
 </body>
 </html>
+
+<script>
+
+    function cadastrar() {
+        alert('Minha função funciona!');
+    }
+</script>
