@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 29/08 - part 2</title>
+</head>
+<body>
+    <ul>
+        <li><b>Corinthians:</b><i id="time_cadastrado1"> </i></li>
+        <li><b>Palmeiras:</b><i id="time_cadastrado2"> </i></li>
+        <li><b>Santos:</b><i id="time_cadastrado3"> </i></li>
+        <li> <b>São Paulo:</b><i id="time_cadastrado4"> </i></li>
+    </ul>
+
+    Defina o Corinthians em uma frase: <input id="time1" type="text"> <br>
+    Defina o Palmeiras em uma frase: <input id="time2" type="text"> <br>
+    Defina o Santos em uma frase: <input id="time3" type="text"> <br>
+    Defina o São Paulo em uma frase: <input id="time4" type="text"> <br>
+   <br> <button onclick="cadastrar()">Classificar time</button>
+   <br>
+   <br>
+   
+   
+   <u>Pergunta:</u> <p style="color:blue;" id="pergunta"></p>
+   
+   <b>a)</b> <br>
+   <b>b)</b> <br>
+   <b>c)</b> <br>
+   <b>d)</b> <br>
+
+   <br>
+   <br>
+
+   Pergunta: <input id="pergunta" type="text"> <br>
+   Alternativas: <input><br>
+   <br> <button onclick="gerarPergunta()">Gerar Questão</button>
+
+   <br>
+   <br>
+
+
+</body>
+</html>
+
+<script>
+
+    function cadastrar() {
+        // pegando o valor digitado na caixa de texto e colocando numa variavel
+        var time_cadastrado1 = document.getElementById("time1").value;
+        document.getElementById("time_cadastrado1").innerHTML = time_cadastrado1;
+
+        var time_cadastrado2 = document.getElementById("time2").value;
+        document.getElementById("time_cadastrado2").innerHTML = time_cadastrado2;
+
+        var time_cadastrado3 = document.getElementById("time3").value;
+        document.getElementById("time_cadastrado3").innerHTML = time_cadastrado3;
+
+        var time_cadastrado4 = document.getElementById("time4").value;
+        document.getElementById("time_cadastrado4").innerHTML = time_cadastrado4;
+    }
+</script>
