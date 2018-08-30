@@ -4,29 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Questão 2</title>
+    <title>Questão 3</title>
 </head>
 <body>
 
-    Oi! Vamos criar a sua conta! <br>
+    Oi!! <br>
     <br>
-    Para começar, digite o seu nome : <input id="nome" type="text"> <br>
+    Para começar, qual personagem da série <u>Crônicas de Nárnia</u> é seu favorito? <input id="personagem" type="text"> <br>
 
-    Ótimo, agora digite quanto você quer depositar na sua primeira operação : <input id="deposito" type="text"> <br>
-
-    Bacana, agora quanto você quer investir mensalmente? <input id="investimento" type="text"> <br>
+    Agora me fala quais caracteristicas mais marcantes nele? 
     <br>
-    Pronto! Agora é só clicar em cadastrar! <br> <button onclick="cadastrar()">Cadastrar minha conta</button>
+    <ol>
+        <li><input id="caracteristica1" type="text"> <br></li>
+        <li><input id="caracteristica2" type="text"> <br></li>
+        <li><input id="caracteristica3" type="text"> <br></li>
+    </ol>
+    Pronto! Agora é só clicar em cadastrar! <br> <button onclick="cadastrar()">Cadastrar personagem</button>
     <br>
     <br>
     <br>
-    Sua nova conta é:
+    Nas <u>Crônicas de Nárnia</u>, o personagem <b style="color:gray;" id="personagem_cadastrado"></b> é sensacional por ser:
     <br>
-    <h3 style="color:gray;"><b>Banco Tário - Novo correntista</b></h3> <br>
-    Correntista: <b style="color:red;"><span id="nome_cadastrado"></span></b> <br>
-    Valor inicial da conta: <b style="color:green;">R$<span id="deposito_cadastrado"></span></b> <br>
-    Investimento mensal:<b style="color:blue;">R$<span id="investimento_cadastrado"></span></b> <br>
-
+    <ol>
+        <li><b style="color:blue;" id="caracteristica_cadastrada1"></b> <br></li>
+        <li><u style="color:green;" id="caracteristica_cadastrada2"></u> <br></li>
+        <li> <i style="color:red;" id="caracteristica_cadastrada3"></i> <br></li>
+    </ol>
 </body>
 </html>
 
@@ -34,13 +37,16 @@
 
     function cadastrar() {
         // pegando o valor digitado na caixa de texto e colocando numa variavel
-        var nome_cadastrado = document.getElementById("nome").value;
-        document.getElementById("nome_cadastrado").innerHTML = nome_cadastrado;
+        var personagem_cadastrado = document.getElementById("personagem").value;
+        document.getElementById("personagem_cadastrado").innerHTML = personagem_cadastrado;
 
-        var deposito_cadastrado = document.getElementById("deposito").value;
-        document.getElementById("deposito_cadastrado").innerHTML = deposito_cadastrado;
+        var caracteristica_cadastrada1 = document.getElementById("caracteristica1").value;
+        document.getElementById("caracteristica_cadastrada1").innerHTML = caracteristica_cadastrada1;
 
-        var investimento_cadastrado = document.getElementById("investimento").value;
-        document.getElementById("investimento_cadastrado").innerHTML = investimento_cadastrado;
+        var caracteristica_cadastrada2 = document.getElementById("caracteristica2").value;
+        document.getElementById("caracteristica_cadastrada2").innerHTML = caracteristica_cadastrada2;
+
+        var caracteristica_cadastrada3 = document.getElementById("caracteristica3").value;
+        document.getElementById("caracteristica_cadastrada3").innerHTML = caracteristica_cadastrada3;
     }
 </script>
