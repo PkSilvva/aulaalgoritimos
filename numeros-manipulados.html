@@ -15,8 +15,11 @@
     <br><br>
 
     Potência: <b id="potencia"></b> <br>
-    Raiz do número 1: <b id="raiz1"></b> <br>
-    Raiz do número 2: <b id="raiz2"></b> <br>
+    Raiz do número 1 truncada em 2: <b id="raiz1truncada"></b> <br>
+    Raiz do número 2 truncada em 2: <b id="raiz2truncada"></b> <br>
+
+    Raiz do número 1 arredondada: <b id="raiz1arredondada"></b> <br>
+    Raiz do número 2 arredondada: <b id="raiz2arredondada"></b> <br>
 
 </body>
 </html>
@@ -32,14 +35,26 @@
         document.getElementById("potencia").innerHTML = potencia;
 
         var raiz1 = Math.sqrt(numero1);
-        document.getElementById("raiz1").innerHTML = raiz1;
+        // document.getElementById("raiz1").innerHTML = raiz1;
 
         var raiz2 = Math.sqrt(numero2);
-        document.getElementById("raiz2").innerHTML = raiz2;
+        // document.getElementById("raiz2").innerHTML = raiz2;
 
+        // arredondando valores com Math.round
+        var raiz1arredondada = Math.round(raiz1);
+        var raiz2arredondada = Math.round(raiz2);
 
+        // truncando valores com o toFixed();
+        // O valor dentro do toFixed é a quantidade de casas decimais
+        var raiz1truncada = raiz1.toFixed(2);
+        var raiz2truncada = raiz2.toFixed(2);
 
+         document.getElementById("raiz1truncada").innerHTML = raiz1truncada;
+         document.getElementById("raiz2truncada").innerHTML = raiz2truncada;
 
+         document.getElementById("raiz1arredondada").innerHTML = raiz1arredondada;
+         document.getElementById("raiz2arredondada").innerHTML = raiz2arredondada;
+        
     }
 
 
