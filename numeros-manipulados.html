@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Números arredondados e truncados</h2>
+    Número 1: <input id="numero1"><br>
+    Número 2: <input id="numero2"><br>
+    <br>
+    <button onclick="calcular()">Realizar Cálculos</button>
+    <br><br>
+
+    Potência: <b id="potencia"></b> <br>
+    Raiz do número 1: <b id="raiz1"></b> <br>
+    Raiz do número 2: <b id="raiz2"></b> <br>
+
+</body>
+</html>
+<script>
+    function calcular() {
+        // recuperando os valores como números
+        var numero1 = Number(document.getElementById("numero1").value);
+        var numero2 = Number(document.getElementById("numero2").value);
+
+        // calculando a potencia
+
+        var potencia = numero1 ** numero2;
+        document.getElementById("potencia").innerHTML = potencia;
+
+        var raiz1 = Math.sqrt(numero1);
+        document.getElementById("raiz1").innerHTML = raiz1;
+
+        var raiz2 = Math.sqrt(numero2);
+        document.getElementById("raiz2").innerHTML = raiz2;
+
+
+
+
+    }
+
+
+</script>
